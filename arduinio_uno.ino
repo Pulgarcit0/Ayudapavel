@@ -18,6 +18,9 @@ int contadorCapturar = 0; // Contador de veces que se ha pulsado el botón de ca
 
 void setup() {
   lcd.begin(20, 4);
+  lcd.print("8 veces");
+  delay(2000);  // Muestra "8 veces" durante 2 segundos
+  lcd.clear(); // Limpia la pantalla
   lcd.print("Potenciometros");
   pinMode(btnSeleccion, INPUT);
   pinMode(btnCapturar, INPUT);
